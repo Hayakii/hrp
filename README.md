@@ -117,6 +117,7 @@ HAY.writeLog(message)
 
 ### HAY.player.steamid(player)
 Return steamid or license of a player.
+- *int* **@player** : Server ID of the player
 ```lua
-HAY.writeLog(message)
+local steamid = HAY.player.steamid(player)
 ```
