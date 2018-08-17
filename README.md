@@ -32,3 +32,16 @@ HAY.withdrawMoney(source, value, function(state, message)
   -- Do stuff in callback
 end)
 ```
+### HAY.print(message)
+Print text in the server's consol adding `[HRP]` prefix.
+- *char* **@message** : Text to print
+```lua
+HAY.print(message)
+```
+
+### HAY.writeLog(message)
+Write text in log file
+- *char* **@message** : Text to write
+```lua
+HAY.writeLog(message)
+```
