@@ -12,7 +12,7 @@ client_script ''
 In this section, you can learn how the framework works and find out what each file is about.
 
 ## Clients functions
-#### HAY.serverPrint(message)
+### HAY.serverPrint(message)
 Print text in the server's console
 > char @message : Message to print
 ```lua
@@ -20,13 +20,13 @@ HAY.serverPrint(message)
 ```
 
 ## Server functions
-#### HAY.withdrawMoney(source, value, callback)
+### HAY.withdrawMoney(source, value, callback)
 Withdraw money from the player's bank account.
-> int @source : Server ID of the player
-> int @value : Amount to withdraw
-> func @function : Callback
-  > bool @state : return true of false
-  > string @message : return a message
+*int* **@source** : Server ID of the player
+*int* **@value** : Amount to withdraw
+*func* **@function** : Callback
+  *bool* **@state** : return true of false
+  *string* **@message** : return a message
 ```lua
 HAY.withdrawMoney(source, value, function(state, message)
   -- Do stuff in callback
