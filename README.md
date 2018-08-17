@@ -36,8 +36,10 @@ end)
 ### HAY.depositMoney(player, value, callback)
 Deposit money to bank account.
 - *int* **@source** : Server ID of the player
+- *int* **@value** : Return amount of money
 - *func* **@function** : Callback
- - *int* **@value** : Return amount of money
+ - *bool* **@state** : return true of false
+ - *string* **@message** : return a message
 ```lua
 HAY.depositMoney(source, value, function(state, message)
   -- Do stuff in callback
